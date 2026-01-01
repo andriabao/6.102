@@ -1,0 +1,47 @@
+---------------
+-- Bug #1079 --
+---------------
+
+1. Study the data -- what do you observe about this regression test for bug #1079?
+
+- TODO
+It starts with 2 blanks.
+The result is wrong because there is a cell that is blank.
+
+2. Hypothesis
+
+What other modules (ADTs or static methods) does solver.solve() depend on?
+
+Sudoku
+
+How well-tested are they? (Write a critique of the testing of Sudoku in particular.)
+
+The testing of Sudoku does not test isSolved
+Sudoku also only tests on a solved puzzle with no empty cells.
+
+3. Experiment
+
+What anomalies (unexpected behavior) did you observe from stepping through solve()?
+
+the value of number never reaches puzzle.size()
+
+
+==============================================================================
+
+-----------------------------------------
+-- Bug found by "covers all blanks..." --
+-----------------------------------------
+
+Data, hypothesis, experiment: what steps are you taking to find the bug?
+
+Start with solved puzzle and take out fewer cells
+
+Once found, explain the bug in a few clear sentences:
+
+TODO
+
+
+And if you can, propose one or more fixes:
+
+TODO
+

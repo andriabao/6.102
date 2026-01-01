@@ -1,0 +1,22 @@
+{
+  "version": "0.2.0",
+  "configurations": [
+    {
+      "args": [
+        "--require",
+        "source-map-support/register",
+        "--colors",
+        "${workspaceFolder}/dist/test"
+      ],
+      "internalConsoleOptions": "openOnSessionStart",
+      "name": "Mocha",
+      "program": "./node_modules/mocha/bin/mocha",
+      "request": "launch",
+      "skipFiles": [
+        "<node_internals>/**"
+      ],
+      "type": "pwa-node",
+      "preLaunchTask": "tsc watch"
+    }
+  ]
+}

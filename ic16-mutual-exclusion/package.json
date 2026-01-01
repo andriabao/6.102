@@ -1,0 +1,16 @@
+{
+  "private": true,
+  "type": "module",
+  "engines": {
+    "node": "^22.2.x"
+  },
+  "scripts": {
+    "Bank1": "tsc && node --require source-map-support/register dist/Bank1.js",
+    "Bank2": "tsc && node --require source-map-support/register dist/Bank2.js",
+    "Bank3": "tsc && node --require source-map-support/register dist/Bank3.js"
+  },
+  "dependencies": {
+    "@types/node": "^22.2.5",
+    "source-map-support": "^0.5.21"
+  }
+}

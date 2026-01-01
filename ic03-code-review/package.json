@@ -1,0 +1,15 @@
+{
+  "private": true,
+  "type": "module",
+  "engines": {
+    "node": "^22.2.x"
+  },
+  "scripts": {
+    "warmup": "tsc && node -r source-map-support/register dist/warmup.js"
+  },
+  "dependencies": {
+    "@types/node": "^22.2.5",
+    "open": "^10.0.3",
+    "source-map-support": "^0.5.21"
+  }
+}

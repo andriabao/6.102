@@ -1,0 +1,16 @@
+{
+  "private": true,
+  "type": "module",
+  "engines": {
+    "node": "^22.2.x"
+  },
+  "scripts": {
+    "factorial": "tsc && node -r source-map-support/register dist/factorial-main.js",
+    "workers": "tsc && node -r source-map-support/register dist/workers.js",
+    "bank": "tsc && node -r source-map-support/register dist/bank-main.js"
+  },
+  "devDependencies": {
+    "@types/node": "^22.2.5",
+    "source-map-support": "^0.5.21"
+  }
+}
